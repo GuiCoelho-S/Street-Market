@@ -11,9 +11,12 @@ const theme = createTheme({
     },
   });
 
+
+
 const App = () => {
 
-
+    document.title="Street Market App";
+    
     return(
         <>
         <GlobalStyle />

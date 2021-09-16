@@ -5,6 +5,7 @@ import { Button } from "../../components/Button";
 import { motion } from "framer-motion";
 import Netlify from "../../assets/images/netlify_logo.png";
 import { ReactComponent as GitHubIcon } from "../../assets/icons/gitHub_icon.svg";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import * as S from "./style";
 
@@ -13,7 +14,7 @@ const Pay = () => {
   var value = totalValue.toFixed(2);
 
   const [finalValue, setFinalValue] = useState();
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   return (
     <Container>
@@ -42,6 +43,14 @@ const Pay = () => {
             >
               <GitHubIcon />
             </S.Icon>
+            <Button
+              primary
+              onClick={() => {
+                setActive(!active);
+              }}
+            >
+              <ArrowBackIcon />
+            </Button>
           </S.Final>
         </motion.div>
       ) : (

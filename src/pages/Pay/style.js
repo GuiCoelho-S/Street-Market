@@ -82,6 +82,18 @@ h2 {
 p {
     color:black;
 }
+
+${Button}{
+    border-radius:50%;
+    height:30px;
+    width:30px;
+    position:absolute;
+    right:5px;
+    top:5px;
+    * {
+        padding:0;
+    }
+}
 `
 export const Link = styled.a`
 
