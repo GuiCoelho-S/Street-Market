@@ -7,9 +7,14 @@ import Netlify from "../../assets/images/netlify_logo.png";
 import { ReactComponent as GitHubIcon } from "../../assets/icons/gitHub_icon.svg";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
+import { useHistory } from 'react-router-dom';
+
 import * as S from "./style";
 
 const Pay = () => {
+
+  const history = useHistory();  
+
   const { totalValue } = useContext(DataItemContext);
   var value = totalValue.toFixed(2);
 
@@ -92,6 +97,13 @@ const Pay = () => {
             >
               Pay
             </Button>
+            <S.BackButton
+              onClick={() => {
+                history.push("/items");
+              }}
+            >
+              <ArrowBackIcon />
+            </S.BackButton>
           </S.PayMethod>
         </Main>
       )}

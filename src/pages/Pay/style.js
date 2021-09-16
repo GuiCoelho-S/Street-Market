@@ -5,7 +5,7 @@ export const configMotion = styled.div`
 width:600px;
 `
 export const PayMethod = styled.main`
-  
+  position:relative;
   width:clamp(300px, 100%, 600px);
   height:300px;
   border:1px solid var(--green);
@@ -117,5 +117,17 @@ border-radius:50%;
 svg {
     width:100%;
     scale:1.5;
+}
+`
+
+export const BackButton = styled(Button)`
+position:absolute;
+border-radius:50%;
+width:40px;
+height:40px;
+bottom:20px;
+left:40px;
+* {
+    padding:0;
 }
 `
