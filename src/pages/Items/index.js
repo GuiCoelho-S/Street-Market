@@ -5,10 +5,10 @@ import ItemFruit from "../../components/Items/ItemFruit";
 import { useContext } from "react";
 import { Button, PreviousButton } from "../../components/Button";
 import { useHistory } from 'react-router-dom';
-import { UserContext } from "../../hooks/useDataUser";
-import { DataItemContext } from "../../hooks/useDataItem";
+import { UserContext } from "../../context/useDataUser";
+import { DataItemContext } from "../../context/useDataItem";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { dataObject } from '../../ObjectInfo/informations.js'
+import { dataObject } from '../../data/informations'
 
 const Items = () => {
 

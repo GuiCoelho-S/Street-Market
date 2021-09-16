@@ -3,7 +3,7 @@ import { Container, Main } from "../../components/Container";
 import * as S from "./style";
 import SkipNextIcon from "@material-ui/icons/SkipNext";
 import { useHistory } from "react-router-dom";
-import { UserContext } from "../../hooks/useDataUser";
+import { UserContext } from "../../context/useDataUser";
 import { useContext } from "react";
 
 const UserData = () => {
@@ -17,18 +17,18 @@ const UserData = () => {
         <S.DataUser>
           <S.InputUser
             id="standard-basic"
-            label="Nome"
+            label="Name"
             primary
             onChange={(e) => {
               setName(e.target.value);
             }}
           />
           <S.Senha>
-            <p>Digite seu saldo: </p>
+            <p>Your balance: </p>
             <S.InputSaldo
               type="number"
               id="standard-basic"
-              label="R$"
+              label="US$"
               onChange={(e) => {
                 setBalance(e.target.value);
               }}
@@ -37,7 +37,7 @@ const UserData = () => {
           </S.Senha>
         </S.DataUser>
         <Button primary onClick={() => history.push("/items")}>
-          Próximo <SkipNextIcon />
+          Next Page <SkipNextIcon />
         </Button>
       </Main>
     </Container>

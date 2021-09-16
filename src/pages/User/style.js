@@ -23,7 +23,7 @@ align-items:flex-end;
 justify-content: space-evenly;
 padding:10px 0;
 p {
-  margin-bottom: 4px;
+  margin-bottom: 18px;
 
 }
 @media (max-width:400px){

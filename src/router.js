@@ -5,8 +5,8 @@ import Header from "./components/Header";
 import Items from "./pages/Items";
 import Pay from "./pages/Pay";
 
-import { DataUserProvider } from './hooks/useDataUser';
-import { DataItemProvider } from './hooks/useDataItem';
+import { DataUserProvider } from './context/useDataUser';
+import { DataItemProvider } from './context/useDataItem';
 const AppRouter = () => {
 
     return(

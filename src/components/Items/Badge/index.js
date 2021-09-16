@@ -2,7 +2,7 @@ import * as S from './style';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import { useContext } from 'react';
-import { DataItemContext } from '../../../hooks/useDataItem';
+import { DataItemContext } from '../../../context/useDataItem';
 
 const Badge = () => {
     const { buyItems } = useContext(DataItemContext);
