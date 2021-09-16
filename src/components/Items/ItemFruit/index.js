@@ -1,8 +1,31 @@
-import * as S from './style'
 
-function ItemFruit(){
+import AddRemoveItem from '../AddRemove';
+import  ImageFilter  from '../../../imgFilter/imageFilter.js'
 
-    return()
+import * as S from './style';
+
+const ItemFruit = ({value, name, title}) => {
+
+    //<S.Image src={name}/>
+
+    var price = value;
+
+    
+    return(
+        <S.ContainerFruit>
+
+            {ImageFilter(name)}
+
+            <S.ItemData>
+                <p>{title}</p>
+                <div>
+                <p>Single Price (kg): </p>
+                <p>US$ {price}</p>
+                </div>
+            </S.ItemData>
+            <AddRemoveItem priceItem={price}/>
+        </S.ContainerFruit>
+    )
 }
 
-export default memo(ItemFruit);
+export default ItemFruit;

@@ -5,23 +5,32 @@ import Header from "./components/Header";
 import Items from "./pages/Items";
 import Pay from "./pages/Pay";
 
-export default function AppRouter(){
+import { DataUserProvider } from './hooks/useDataUser';
+import { DataItemProvider } from './hooks/useDataItem';
+const AppRouter = () => {
 
     return(
     <>
         <Header />
         <Switch>
+            <DataItemProvider>
+            <DataUserProvider>
             <Route exact path="/" >
+                
                 <UserData />
             </Route>
+            
             <Route path="/items">
                 <Items />
-            </Route>    
+            </Route>
+            </DataUserProvider>    
             <Route path="/pay">
                 <Pay />
             </Route>
+            </DataItemProvider>
         </Switch>
         </>)
 }
 
 
+export default AppRouter

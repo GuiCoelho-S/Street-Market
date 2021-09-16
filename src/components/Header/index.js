@@ -1,7 +1,7 @@
 import * as S from './style';
 import { ReactComponent as MarketIcon } from "../../assets/icons/market_icon.svg";
 
-export default function Header(){
+const Header = () => {
 
     return(
         <S.Header>
@@ -10,3 +10,5 @@ export default function Header(){
         </S.Header>
     )
 }
+
+export default Header;

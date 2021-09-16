@@ -1,7 +1,7 @@
 import { Container, Main } from "../../components/Container";
 
 
-export default function Pay () {
+const Pay = () => {
 
     return(
         <Container>
@@ -11,3 +11,4 @@ export default function Pay () {
         </Container>
     )
 }
+export default Pay;

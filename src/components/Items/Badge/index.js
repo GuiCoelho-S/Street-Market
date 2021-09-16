@@ -1,9 +1,11 @@
-import { memo, useState } from 'react';
 import * as S from './style';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
-function Badge (){
-    const number = useState(0);
+import { useContext } from 'react';
+import { DataItemContext } from '../../../hooks/useDataItem';
+
+const Badge = () => {
+    const { buyItems } = useContext(DataItemContext);
 
     return(
         <S.Badge>
@@ -11,9 +13,9 @@ function Badge (){
                 <ShoppingCartIcon />
             </S.BadgeIcon>
             <S.Counter>
-                {number}
+                {buyItems}
             </S.Counter>
         </S.Badge>
     )
 }
-export default memo(Badge);
+export default Badge;

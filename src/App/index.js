@@ -7,14 +7,11 @@ const theme = createTheme({
     palette: {
       primary: {
         main: '#318829',
-      },
-      secondary: {
-        main: '#f44336',
-      },
+      }    
     },
   });
 
-export default function App(){
+const App = () => {
 
 
     return(
@@ -28,3 +25,6 @@ export default function App(){
         </>
     )
 }
+
+
+export default App;

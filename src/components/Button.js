@@ -28,3 +28,17 @@ export const Button = styled.button`
         padding-left:5px;
     }
 `;
+
+
+export const PreviousButton = styled(Button)`
+width:60px;
+height:60px;
+border-radius:50%;
+position:absolute;
+left:20px;
+bottom:20px;
+
+svg:nth-child(n+1){
+    padding:0 !important
+}
+`
