@@ -38,10 +38,7 @@ export const PayMethod = styled.main`
       align-self:end;
       transform:translateX(-20px);
     
-      @media (max-width:400px){
-          align-self:center;
-          transform:none;
-      }
+      
     } 
 
 `;

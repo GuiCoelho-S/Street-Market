@@ -33,7 +33,7 @@ const Pay = () => {
             <h2>I hope that you had enjoyed it 😉</h2>
             <p>If you wanna see other projects:</p>
             <S.Link
-              href="https://app.netlify.com/teams/guicoelho-s/sites"
+              href="https://pokedex-v2-coelho-react.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
