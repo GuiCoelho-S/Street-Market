@@ -1,12 +1,12 @@
 
-import UserData from "./pages/User";
+import UserData from "pages/User";
 import {  Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Items from "./pages/Items";
-import Pay from "./pages/Pay";
+import Header from "components/Header";
+import Items from "pages/Items";
+import Pay from "pages/Pay";
 
-import { DataUserProvider } from './context/useDataUser';
-import { DataItemProvider } from './context/useDataItem';
+import { DataUserProvider } from 'context/useDataUser';
+import { DataItemProvider } from 'context/useDataItem';
 const AppRouter = () => {
 
     return(

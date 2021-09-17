@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import * as V from '../components/GlobalStyle/index';
+import * as V from 'components/GlobalStyle/index';
 
 export const Button = styled.button`
     display:flex;

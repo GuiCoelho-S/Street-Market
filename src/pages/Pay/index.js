@@ -1,10 +1,10 @@
-import { Container, Main } from "../../components/Container";
+import { Container, Main } from "components/Container";
 import { useContext, useState } from "react";
-import { DataItemContext } from "../../context/useDataItem";
-import { Button } from "../../components/Button";
+import { DataItemContext } from "context/useDataItem";
+import { Button } from "components/Button";
 import { motion } from "framer-motion";
-import Netlify from "../../assets/images/netlify_logo.png";
-import { ReactComponent as GitHubIcon } from "../../assets/icons/gitHub_icon.svg";
+import Netlify from "assets/images/netlify_logo.png";
+import { ReactComponent as GitHubIcon } from "assets/icons/gitHub_icon.svg";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import { useHistory } from 'react-router-dom';

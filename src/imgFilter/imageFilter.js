@@ -1,11 +1,11 @@
-import orange from '../assets/images/orange.png';
-import avocado from '../assets/images/avocado.png';
-import kiwi from '../assets/images/kiwi.png';
-import banana from '../assets/images/banana.png';
-import cranberry from '../assets/images/cranberry.png';
-import grape from '../assets/images/grape.png';
-import papaya from '../assets/images/papaya.png';
-import watermelon from '../assets/images/watermelon.png';
+import orange from 'assets/images/orange.png';
+import avocado from 'assets/images/avocado.png';
+import kiwi from 'assets/images/kiwi.png';
+import banana from 'assets/images/banana.png';
+import cranberry from 'assets/images/cranberry.png';
+import grape from 'assets/images/grape.png';
+import papaya from 'assets/images/papaya.png';
+import watermelon from 'assets/images/watermelon.png';
 
 import { Image } from './style';
 

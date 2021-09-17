@@ -1,14 +1,14 @@
-import { Container } from "../../components/Container";
+import { Container } from "components/Container";
 import * as S from "./style";
-import Badge from "../../components/Items/Badge";
-import ItemFruit from "../../components/Items/ItemFruit";
+import Badge from "components/Items/Badge";
+import ItemFruit from "components/Items/ItemFruit";
 import { useContext } from "react";
-import { Button, PreviousButton } from "../../components/Button";
+import { Button, PreviousButton } from "components/Button";
 import { useHistory } from 'react-router-dom';
-import { UserContext } from "../../context/useDataUser";
-import { DataItemContext } from "../../context/useDataItem";
+import { UserContext } from "context/useDataUser";
+import { DataItemContext } from "context/useDataItem";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { dataObject } from '../../data/informations'
+import { dataObject } from 'data/informations'
 
 const Items = () => {
 
@@ -39,7 +39,7 @@ const Items = () => {
         <S.ListFruit>
           {
               dataObject.map((object) => {
-                return <ItemFruit key={object.id} value={object.price} name={object.name} title={object.title}/>
+                return <ItemFruit key={object.id} value={object.price} name={object.name} title={object.title} />
               })
           }
         </S.ListFruit>

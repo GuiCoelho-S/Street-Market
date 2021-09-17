@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import * as S from './style';
 
 import { useContext } from 'react';
-import { DataItemContext } from '../../../context/useDataItem';
+import { DataItemContext } from 'context/useDataItem';
 
 const AddRemoveItem = ({priceItem}) => {
     const { setBuyItems, setTotalValue } = useContext(DataItemContext);
